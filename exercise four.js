@@ -1,20 +1,20 @@
-var question = prompt("What time of day is it?");
-var timeOfDay = ["morning", "noon", "evening"];
-var mealType = ["breakfast", "lunch", "dinner"];
-foodSuggestion = ["eggs and toast", "a salad", "chicken and rice"];
-var i = 0;
-for (i = 0; i < 1; i++) {
-console.log("Since it is " + (timeOfDay) + " , 
-   you should be eating" + (mealType) + " . 
-   We suggest " + (foodSuggestion));
- }  
-for (i = 0; i < 2; i++) {
-console.log("Since it is " + (timeOfDay) + " , 
-   you should be eating" + (mealType) + " . 
-   We suggest " + (foodSuggestion));
- }  
-for (i = 0; i < 3; i++) {
-console.log("Since it is " + (timeOfDay) + " , 
-   you should be eating" + (mealType) + " . 
-   We suggest " + (foodSuggestion));
- }  
+var timeOfDay = {
+'morning' : 'breakfast',
+'noon': 'lunch',
+'evening' : 'dinner'
+};
+var mealType = {
+'breakfast' : 'eggs and toast',
+'lunch': 'a salad',
+'dinner' : 'chicken and rice'
+};
+
+while (true) {
+var userInput = prompt('What time of day is it?');
+}
+
+var mealSuggestion = mealType[timeOfDay];
+
+var output = 'Since it is ' + timeOfDay + ',' +  'you should be eating ' + mealType + '. We suggest' + mealSuggestion + '.';
+
+console.log(output);
