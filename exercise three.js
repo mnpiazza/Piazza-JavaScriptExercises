@@ -1,16 +1,10 @@
-var answer = prompt("Would you like to print your name?");
-var i = "!";
-while (answer === "name") {
-console.log("Hello. My name is " + answer);
-}
-if (answer === "no") {   
-    console.log(" ");  
-    }
-var answer2 = prompt("Would you like to print this again?");
-while (answer2 === "yes") {
-console.log("Hello. My name is " + answer + i++)
-}
-if (play === "no") {   
-    console.log(" ");  
-    }
+var input = prompt('Would you like to print your name?');
+
+var output = 'Hello. My name is ' + "";
+
+if (input == 'yes') {
+console.log(output + '!');
     
+while (input == 'yes') {
+console.log(output + '!');
+}
